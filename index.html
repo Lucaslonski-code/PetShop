@@ -613,3 +613,234 @@
 
     <!-- ================= MODAL SERVIÇOS ================= -->
 
+        <div
+        id="servicoModal"
+        class="modal"
+        aria-hidden="true">
+
+        <div
+            class="modal-content svc-sheet"
+            role="dialog"
+            aria-modal="true">
+
+            <div class="svc-header">
+
+                <div class="svc-title">
+                    Selecionar serviço
+                </div>
+
+                <span
+                    class="svc-close"
+                    onclick="fecharModal('servicoModal')">
+
+                    &times;
+
+                </span>
+
+            </div>
+
+            <div class="svc-search">
+
+                <i
+                    class='bx bx-search'
+                    aria-hidden="true">
+
+                </i>
+
+                <input
+                    id="svcSearch"
+                    type="search"
+                    placeholder="Digite para procurar um serviço..."
+                    autocomplete="off"
+                    spellcheck="false">
+
+            </div>
+
+            <div
+                class="svc-list"
+                id="servicoLista">
+
+            </div>
+
+            <div class="svc-actions">
+
+                <button
+                    id="servicoCancelar"
+                    class="svc-btn svc-btn-ghost">
+
+                    Cancelar
+
+                </button>
+
+                <button
+                    id="servicoConfirmarWpp"
+                    class="svc-btn svc-btn-dark">
+
+                    Confirmar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= MODAL CONFIRMAÇÃO ================= -->
+
+    <div
+        id="modalConfirmacao"
+        class="modal"
+        aria-hidden="true">
+
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true">
+
+            <span
+                class="close"
+                onclick="fecharModal('modalConfirmacao')">
+
+                &times;
+
+            </span>
+
+            <h2>
+                Agendamento Confirmado ✨
+            </h2>
+
+            <div
+                id="confResumo"
+                class="conf-resumo">
+
+            </div>
+
+            <button
+                type="button"
+                id="btnOkConfirmacao">
+
+                OK
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ================= MODAL REAGENDAR ================= -->
+
+    <div
+        id="modalReagendar"
+        class="modal"
+        aria-hidden="true">
+
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true">
+
+            <span
+                class="close"
+                onclick="fecharModal('modalReagendar')">
+
+                &times;
+
+            </span>
+
+            <h2>
+                Reagendar seu horário
+            </h2>
+
+            <!-- Etapa 1 -->
+
+            <div id="reaStepBusca">
+
+                <label for="reaNome">
+                    Nome
+                </label>
+
+                <input
+                    type="text"
+                    id="reaNome"
+                    placeholder="Ex.: Maria">
+
+                <label for="reaSobrenome">
+                    Sobrenome
+                </label>
+
+                <input
+                    type="text"
+                    id="reaSobrenome"
+                    placeholder="Ex.: Silva">
+
+                <button
+                    type="button"
+                    id="reaBuscarBtn">
+
+                    Buscar agendamentos
+
+                </button>
+
+                <div
+                    id="reaResultados"
+                    class="rea-lista">
+
+                </div>
+
+            </div>
+
+            <!-- Etapa 2 -->
+
+            <div
+                id="reaStepMover"
+                class="hidden">
+
+                <div
+                    id="reaEscolhido"
+                    class="muted">
+
+                </div>
+
+                <label for="reaData">
+                    Nova data
+                </label>
+
+                <input
+                    type="date"
+                    id="reaData">
+
+                <label for="reaHora">
+                    Novo horário
+                </label>
+
+                <select id="reaHora">
+
+                </select>
+
+                <button
+                    type="button"
+                    id="reaConfirmarBtn">
+
+                    Confirmar reagendamento
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= SCRIPTS ================= -->
+
+    <script
+        type="module"
+        src="./script.js">
+
+    </script>
+
+</body>
+
+</html>
+
